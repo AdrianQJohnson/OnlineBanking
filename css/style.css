@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
 .container {
     @media (max-width: 480px) {
         width: 100%;
@@ -15,6 +25,7 @@
 body {
     font-size: 1.25em;
     background-color: seashell;
+    font-family: Ubuntu;
 }
 
 a, .nav-link {
