@@ -17,7 +17,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="dashboard.html">Dashboard</a>
+                  <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="transfer.html">Transfer <span class="sr-only">(current)</span></a>
@@ -31,7 +31,44 @@
           </nav>
     </header>
     <main>
+        <div class="container">
+            <h1>Transfer Funds</h1>
+            <form action="">
+                <div class="form-group">
+                    <label for="transfer-from">Transfer From</label>
+                    <select class="form-control" id="transfer-from">
+                        <option>Select Account</option>
+                      <option>Checking <span id="checking-account">############</span></option>
+                      <option>Savings <span id="savings-account">############</span></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="transfer-to">Transfer To</label>
+                    <select class="form-control" id="transfer-to">
+                      <option>Select Account</option>
+                      <option>Checking <span id="checking-account">############</span></option>
+                      <option>Savings <span id="savings-account">############</span></option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="transfer-amount">Amount</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                        </div>
+                        <input type="text" class="form-control" id="transfer-amount" placeholder="##.##">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="transfer-date">Send On:</label>
 
+                    <input type="date" id="transfer-date" name="send-on"
+                           value="2018-07-22"
+                           min="2020-11-25" max="2020-12-31">
+                  </div>
+                  <button type="submit" class="btn btn-danger">Transfer</button>
+            </form>
+        </div>
     </main>
     <footer>
         <p>&copyCopyright 2020 Adrian Q Johnson, All Rights Reserved</p>
